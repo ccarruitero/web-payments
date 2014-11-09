@@ -1,0 +1,11 @@
+.moz, .moz::before {
+  color: white;
+}
+
+#fxos img {
+  margin: 0 25%;
+}
+
+#inapp-payment img {
+  margin: 0 8%;
+}

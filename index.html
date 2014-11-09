@@ -1,10 +1,11 @@
 <!DOCTYPE HTML>
 <html lang="en-US" class="fade">
 <head>
-  <title>{title}</title>
+  <title>Web Payments</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=1274, user-scalable=no">
   <link rel="stylesheet" href="themes/mozilla/styles/style.css">
+  <link rel="stylesheet" href="themes/custom.css">
   <style type="text/css">
 
   </style>
@@ -12,122 +13,218 @@
 <body class="list">
 
   <header class="caption">
-    <h1>{title}</h1>
-    <p class="footer">{name}, <a href="http://twitter.com/">{twitter}</a> or <a href="mailto:">you@mail.com</a></p>
+    <h1>Web Payments in Fx OS</h1>
   </header>
 
-  <div id="cover" class="slide"><div>
+  <div id="cover" class="slide cover"><div>
     <section>
       <header>
-        <h2>{title}</h2>
+        <h2>Web Payments in Fx OS</h2>
       </header>
-      <footer class="byline">{Name}, Mozilla, {event}, {location}, {date}</footer>
+      <footer class="byline">César Carruitero, @ccarruitero</footer>
+      <img src="pictures/cover.jpg" alt="">
     <footer class="notes">
     </footer>
     </section>
   </div></div>
 
-  <div id="agenda" class="slide"><div>
+  <div id="whoiam" class="slide shout"><div>
     <section>
       <header>
-        <h2>Agenda</h2>
+        <h2>Who I am</h2>
       </header>
-      <ul>
-        <li>Who is Mozilla
-          <ul>
-            <li>{your slides}</li>
-          </ul>  
-        </li>
-        <li>Conclusion & call to action</li>
-        <li>Questions and Answers</li>
-      </ul> 
       <footer class="notes">
       </footer>
     </section>
   </div></div>
 
-  <div id="mozilla-is" class="slide"><div>
+  <div id="me" class="slide cover w"><div>
+    <section>
+      <header>
+      <p>César Carruitero</p>
+      <p>ccarruitero</p>
+      <p>Mozillian, Developer ...</p>
+    </section>
+  </div></div>
+
+  <div id="mozilla-is" class="slide cover w"><div>
     <section>
       <header>
         <h2>Mozilla is&hellip;</h2>
       </header>
-      <blockquote>
+      <blockquote class="moz">
         a global community of people who believe that <strong>openness</strong>, <strong>innovation</strong>, and <strong>opportunity</strong> are key to the continued health of the Internet.
       </blockquote>
       <footer class="notes">
       </footer>
+      <img src="pictures/comunidad.jpg" alt="">
     </section>
   </div></div>
 
-  <div id="firefox" class="slide"><div>
+  <div id="so" class="slide shout"><div>
     <section>
       <header>
-        <h2>We’re known for the Firefox Web Browser</h2>
+        <h2>So, web payments in Fx OS</h2>
       </header>
-        <img src="themes/mozilla/images/Fx-logo.png" class="middle" width="400" alt="Firefox">
       <footer class="notes">
       </footer>
     </section>
   </div></div>
 
-  <div id="manifesto" class="slide"><div>
+  <div id="fxos" class="slide"><div>
     <section>
       <header>
-        <h2>Mozilla Manifesto</h2>
+        <h2>Fx OS</h2>
       </header>
-      <ul class="inner">
-        <li class="active">The Internet is a <strong>global public resource</strong> that must <strong>remain open</strong> and <strong>accessible</strong>.</li>
-        <li>The <strong>Internet should enrich the lives</strong> of individual human beings.</li>
-        <li>Individuals' <strong>security</strong> on the Internet is <strong>fundamental</strong> and cannot be treated as optional.</li>
-        <li>Individuals must have the <strong>ability to shape their own experiences</strong> on the Internet.</li>
-      </ul>
       <footer class="notes">
+      </footer>
+      <img src="pictures/firefox-phone.png" alt="">
+    </section>
+  </div></div>
+
+  <div id="payments" class="slide cover"><div>
+    <section>
+      <header>
+        <h2>Payments with Firefox Marketplace</h2>
+      </header>
+      <footer class="notes">
+        Firefox Marketplace: paid app || in-app payment
+        You can sell open web apps in your own store following the receipt spec
+      </footer>
+      <img src="pictures/marketplace.png" alt="">
+    </section>
+  </div></div>
+
+  <div id="pay-flow" class="slide"><div>
+    <section>
+      <header>
+        <h2></h2>
+      </header>
+      <footer class="notes">
+        an open web app initiate payment from your app by signing JWT to your
+        payment provider, your payment provider should validate and return 
+        a receipt
+      </footer>
+      <img src="pictures/firefox-os-payments-flow.jpg" alt="">
+    </section>
+  </div></div>
+ 
+  <div id="jwt" class="slide cover w"><div>
+    <section>
+      <header>
+        <h2>JSON Web Token (JWT)</h2>
+      </header>
+      <footer class="notes">
+      </footer>
+      <img src="pictures/jwt.jpg" alt="">
+    </section>
+  </div></div>
+
+  <div id="paidapp" class="slide"><div>
+    <section>
+      <header>
+        <h2>paid app</h2>
+      </header>
+      <code>
+        navigator.mozApps
+      </code>
+      <li>Add installs_allowed_from to your manifest</li>
+      <li>verify receipt</li>
+      <footer class="notes">
+        It's not mandatory but is recomendable at least verify receipt. You can use mozilla's
+        <a href="https://github.com/mozilla/receiptverifier">receipt verifier library</a>
+        or you can <a href="https://developer.mozilla.org/en-US/Marketplace/Monetization/Validating_a_receipt">build your own implementation</a>
       </footer>
     </section>
   </div></div>
 
-  <div id="yourslides" class="slide"><div>
+  <div id="inapp-payment" class="slide"><div>
     <section>
       <header>
-        <h2>Your slides here</h2>
+        <h2>in-app payment</h2>
       </header>
-      <p>Your content goes here,
-after the Mission intro and the before the call to action  & Q&A</p>
       <footer class="notes">
+      </footer>
+      <img src="pictures/mobile-in-app-pay.jpg" alt="">
+    </section>
+  </div></div>
+ 
+  <div id="mozpay" class="slide"><div>
+    <section>
+      <header>
+        <h2>mozPay</h2>
+      </header>
+      <li>sign JWT with application secret (in your server)</li>
+      <li>send jwt to Firefox Marketplace with mozPay API</li>
+      <code>
+        var request = navigator.mozPay(jwts);
+      </code>
+      <li>store transactionId in your server</li>
+      <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Navigator.mozPay#Example">example</a></p>
+      <footer class="notes">
+        - You need manage product details in your server.
+        - You need implement how purchases are verified and restored
+        - 
+      </footer>
+    </section>
+  </div></div>
+ 
+  <div id="fxpay" class="slide"><div>
+    <section>
+      <header>
+        <h2><a href="https://github.com/mozilla/fxpay">fxPay</a></h2>
+      </header>
+      <li>set systemXHR permission</li>
+      <li>must declarate origin</li>
+      <li>your app should be privileged</li>
+      <footer class="notes">
+        You dont need a server, let Firefox Marketplace do the work.
+        a Wrapper around Firefox Marketplace API
       </footer>
     </section>
   </div></div>
 
-  <div id="drawing" class="slide"><div>
+  <div id="fxpay-usage" class="slide"><div>
     <section>
       <header>
-        <h2>And now?</h2>
+        <h2>how to use</h2>
       </header>
-      <ul>
-        <li>Use Firefox Beta: <a href="http://mozilla.org/beta">mozilla.org/beta</a></li>
-        <li>File bugs on <a href="http://bugzilla.mozilla.org">bugzilla.mozilla.org</a></li>
-        <li>Try our new Developer tools</li>
-        <li>Use (and contribute?) to the <a href="http://developer.mozilla.org">Mozilla Developer Network</a></li>
-      </ul>
+      <footer class="notes">
+      </footer>
+      <img src="pictures/fxpay.jpg" alt="">
+    </section>
+  </div></div>
+
+  <div id="demo" class="slide shout"><div>
+    <section>
+      <header>
+        <h2>demo time</h2>
+      </header>
       <footer class="notes">
       </footer>
     </section>
   </div></div>
-
-  <div id="qanda" class="slide"><div>
+ 
+  <div id="w3c" class="slide cover"><div>
     <section>
       <header>
-        <h2>Questions & Answers</h2>
+        <h2>w3c</h2>
       </header>
-      <ul>
-        <li><a href="http://www.mozilla.org/about/manifesto.en.html">http://www.mozilla.org/about/manifesto.en.html</a></li>
-        <li><a href="https://wiki.mozilla.org/WebAPI">https://wiki.mozilla.org/WebAPI</a></li>
-        <li><a href="https://wiki.mozilla.org/Apps">https://wiki.mozilla.org/Apps</a></li>
-        <li><a href="https://marketplace.mozilla.org">https://marketplace.mozilla.org</a></li>
-        <li><a href="http://www.mozilla.org/b2g/">http://www.mozilla.org/b2g/</a></li>
-        <li><a href="http://blog.mozilla.org/beyond-the-code/">http://blog.mozilla.org/beyond-the-code/</a></li>
-      </ul>
       <footer class="notes">
+      </footer>
+      <img src="pictures/w3c.jpg" alt="">
+    </section>
+  </div></div>
+ 
+  <div id="links" class="slide"><div>
+    <section>
+      <header>
+        <h2>links</h2>
+      </header>
+      <li><a href="https://wiki.mozilla.org/Apps/WebApplicationReceipt">Web Application Receipt Spec</a></li>
+      <li><a href="http://self-issued.info/docs/draft-ietf-oauth-json-web-token.html">JSON Web Token Spec</a></li>
+      <li><a href="https://github.com/mozilla/receiptverifier"> mozilla receipt verifier library</a></li>
+      <li><a href="http://www.w3.org/community/webpayments/">w3c payments</a></li>
       </footer>
     </section>
   </div></div>
